@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b073e8f316.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <img src="photos/po (1).jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Survices</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark"onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Hartik Virulkar</span><br> From Maharashtra</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- ------------------------------About--------------------------- -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photos/hsv_light.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>My name is <b>Hartik Virulkar</b>.I am persuing BE in Computer Science & Engineering from PRCEAM,Badnera-Amravti.I am a quick learner and enthusiastic fresher to learn new technologies and methodologies. Always willing to innovate the new things which can be used for betterment of the organization and society.</p>
+
+                   <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI</span><br>Desinging Web interfaces</li>
+                            <li><span>Java Based Development</span><br>Developing New Application Using Java </li>
+                            <li><span>Python</span><br>Basic Kwonlegde about OOPS</li>
+                        </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>SSC</span><br>Prashant Vidyalya,RamNagar, Amravati<br>03/2018  Percent: 91.40%</li>
+                        <li><span>HSC</span><br> Shri Shivaji Science College Of Amravati,Amravati<br>02/2020  Percent:83.08%</li>
+                        <li><span>BE In CSE</span><br>Prof Ram Meghe College Of Engineering & Management,Badnera-Amravati<br>Persuing  CGPA: 8.6/10</li>
+                    </ul>
+               </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------services----------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Survices</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design involves creating visually appealing and user-friendly websites by combining elements like layout, typography, colors, and images to convey information and facilitate seamless user interaction. It encompasses both aesthetic and functional considerations for a compelling online presence.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Development</h2>
+                     <p>Java development entails creating applications and software solutions using the Java programming language, known for its platform independence and object-oriented capabilities. It's widely used for web, mobile, and enterprise applications.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Development</h2>
+                    <p>Python development involves coding software and applications using the Python programming language, known for its readability and versatility, suitable for web development, data analysis, automation, and more.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------portfolio--------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="photos/sudoku (1).jpg">
+                    <div class="layer">
+                        <h3>Sudoku Solver</h3>
+                        <p>A Sudoku solver using image processing employs computer vision techniques to interpret and solve Sudoku puzzles captured from images.</p>
+                        <a href="#"><i class="fa-solid fa-chess-board"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photos/tic.png">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>A Tic Tac Toe game created using Python provides a command-line-based interactive experience of the classic two-player game.</p>
+                        <a href="#"><i class="fa-solid fa-gamepad"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photos/stone (1).png">
+                    <div class="layer">
+                        <h3>Stone-Paper-Scissor</h3>
+                        <p>A Java-based Stone-Paper-Scissors game offers users a simple text-based interface to play the popular hand game against the computer.</p>
+                        <a href="#"><i class="fa-solid fa-hand-scissors"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <a  href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- --------------------Contact------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href=""><i class="fa-regular fa-envelope"></i></a>hartikvirulkar@gmail.com</p>
+                    <p><a href=""><i class="fa-solid fa-phone"></i></a>0987654321</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/hartik-virulkar-1a0855236"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/HartikVirulkar"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="photos/Screenshot-_4_.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ hartik. Made with <i class="fa-regular fa-heart"></i> by A-class </p>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------javascript-------------------------- -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBQjisWel1MBspNXhKMxCLq7VFYo99PIujQhb4LTB37lw_tN8N8sYknjShUGFj0v8T8Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML ="Message has sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+    
+  </script>
+   
+</body>
+</html>
